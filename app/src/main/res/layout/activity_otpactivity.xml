@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".otpactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Login/SignUp"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBarotp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:layout_width="match_parent"
+        android:indeterminateTint="#00FF00"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enter verification code"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="We have sent you a 6 digit verification code on"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/phoneotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Number"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/otpfield"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:maxLength="6"
+        android:layout_gravity="center"
+        android:background="@drawable/editextedges"
+        android:ems="6"
+        android:cursorVisible="false"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:hint="OTP"
+        android:layout_marginBottom="10dp"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/otpcountdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#00FF00"
+        android:layout_marginBottom="10dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/verifyotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/curved_edges"
+        android:layout_marginBottom="30dp"
+        android:text="Login/SignUp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/resendotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/curved_edges"
+        android:text="Resend OTP"
+        app:backgroundTint="@null" />
+</LinearLayout>

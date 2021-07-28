@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
     tools:context=".loginactivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progressBarlogin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@null"
+        android:indeterminate="true"
+        android:indeterminateTint="#00FF00"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/editextedges"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="+91"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="30sp"
+            android:textColor="#696969"
+            android:layout_marginEnd="10dp"
+            android:text="|" />
+
+        <EditText
+            android:id="@+id/phonenumberfield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:hint="Mobile Number"
+            android:maxLength="10"
+            android:cursorVisible="false"
+            android:longClickable="false"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/loginsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_edges"
+        app:backgroundTint="@null"
+        android:text="LOG IN/SIGN UP" />
+
+
+</LinearLayout>
