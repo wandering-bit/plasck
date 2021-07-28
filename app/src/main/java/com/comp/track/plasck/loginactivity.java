@@ -30,6 +30,9 @@ public class loginactivity extends AppCompatActivity {
 
         getSupportActionBar().hide(); //hide the title bar
 
+        Intent intent = getIntent();
+        String type = intent.getStringExtra("type");
+
         loginsignup = findViewById(R.id.loginsignup);
         phonenumber = findViewById(R.id.phonenumberfield);
         loginsignup.setVisibility(View.INVISIBLE);
@@ -62,6 +65,7 @@ public class loginactivity extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
                 Intent intent = new Intent(getApplicationContext(),otpactivity.class);
                 intent.putExtra("phone",phonenumber.getText().toString());
+                intent.putExtra("type",type);
                 startActivity(intent);
             }
         });

@@ -25,6 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
@@ -41,8 +42,10 @@ public class otpactivity extends AppCompatActivity {
     String intention;
     PhoneAuthProvider.ForceResendingToken mResendToken;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference databaseReference = database.getReference();
     FirebaseUser currentuser;
     FirebaseAuth getmAuth = FirebaseAuth.getInstance();
+    String type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +67,7 @@ public class otpactivity extends AppCompatActivity {
         currentuser = FirebaseAuth.getInstance().getCurrentUser();
 
         Intent intent = getIntent();
+        type = intent.getStringExtra("type");
         phonenumber = intent.getStringExtra("phone");
 
         otpverification();
@@ -134,6 +138,7 @@ public class otpactivity extends AppCompatActivity {
     }
 
     public void otpverification(){
+        progressBarotp.setVisibility(View.VISIBLE);
         PhoneAuthOptions options =
                 PhoneAuthOptions.newBuilder(mAuth)
                         .setPhoneNumber("+91"+phonenumber)       // Phone number to verify
@@ -170,9 +175,11 @@ public class otpactivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Intent intent = new Intent(otpactivity.this,MainActivity.class);
+                            databaseReference.child("+91"+phonenumber).child("type").setValue(type);
+                            Intent intent = new Intent(otpactivity.this,homescreen.class);
                             startActivity(intent);
                             progressBarotp.setVisibility(View.INVISIBLE);
+
                         } else {
                             Toast.makeText(otpactivity.this, "Please check the enterd OTP", Toast.LENGTH_LONG).show();
                         }

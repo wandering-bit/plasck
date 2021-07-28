@@ -13,12 +13,13 @@
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <action android:name="android.intent.action.MAIN"/>
-                <action android:name="android.intent.action.SEND" />
             </intent-filter>
         </activity>
         <activity android:name=".otpactivity" />
         <activity android:name=".loginactivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".homescreen" >
+        </activity>
     </application>
 
 </manifest>
