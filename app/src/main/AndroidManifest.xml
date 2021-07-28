@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Plasck">
-        <activity android:name=".otpactivity"></activity>
-        <activity android:name=".loginactivity" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".splashScreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.SEND" />
             </intent-filter>
         </activity>
+        <activity android:name=".otpactivity" />
+        <activity android:name=".loginactivity" />
         <activity android:name=".MainActivity" />
     </application>
 
