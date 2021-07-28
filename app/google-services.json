@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "931138035747",
+    "firebase_url": "https://plasck-a0dee-default-rtdb.firebaseio.com",
+    "project_id": "plasck-a0dee",
+    "storage_bucket": "plasck-a0dee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931138035747:android:786ea85a4237687e87d196",
+        "android_client_info": {
+          "package_name": "com.comp.track.plasck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931138035747-iat9fe0usqjer1e7oou50d5vn2h0d03c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0Au2eQxcpyIPGjmRHF6yeiuZTSF7J-3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931138035747-iat9fe0usqjer1e7oou50d5vn2h0d03c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C6EFD3D3"
     android:gravity="center_vertical|center_horizontal"
     android:padding="50dp"
     tools:context=".MainActivity">
@@ -12,10 +13,10 @@
         android:id="@+id/cust"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:background="#00FF00"
-        app:backgroundTint="@null"
         android:layout_marginBottom="20dp"
-        android:text="Customer" />
+        android:background="#00FF00"
+        android:text="Customer"
+        app:backgroundTint="@null" />
 
     <Button
         android:id="@+id/agent"
@@ -23,6 +24,6 @@
         android:layout_height="100dp"
         android:layout_below="@id/cust"
         android:background="#00FF00"
-        app:backgroundTint="@null"
-        android:text="Agent"/>
+        android:text="Agent"
+        app:backgroundTint="@null" />
 </RelativeLayout>
