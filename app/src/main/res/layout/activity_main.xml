@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
-        android:background="#00FF00"
+        android:background="@drawable/curved_edges"
         android:text="Customer"
         app:backgroundTint="@null" />
 
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@id/cust"
-        android:background="#00FF00"
+        android:background="@drawable/curved_edges"
         android:text="Agent"
         app:backgroundTint="@null" />
 </RelativeLayout>
