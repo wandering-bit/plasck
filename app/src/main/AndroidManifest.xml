@@ -9,17 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Plasck">
+        <activity android:name=".CustomerSell">
+
+        </activity>
+        <activity android:name=".HomeScreen2nd" />
         <activity android:name=".splashScreen">
             <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
         <activity android:name=".otpactivity" />
         <activity android:name=".loginactivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".homescreen" >
-        </activity>
+        <activity android:name=".homescreen" />
     </application>
 
 </manifest>

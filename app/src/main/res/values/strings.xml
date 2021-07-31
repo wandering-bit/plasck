@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">plasck</string>
+    <string name="customer_option">CUSTOMER OPTION</string>
+    <string name="call_the_scrapper">call the scrapper</string>
+    <string name="sell_the_plastic">sell the plastic</string>
+    <string name="watch_your_usage_of_plastic">watch your usage of plastic</string>
+    <string name="invalid_name">Please Enter Name</string>
+    <string name="invalid_phone">Please Enter Phone Number</string>
+    <string name="invalid_adress">Please Enter Your Complete Adress</string>
+    <string name="invalid_pin">Please Enter Your Pincode</string>
 </resources>
