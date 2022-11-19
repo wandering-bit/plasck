@@ -1,0 +1,2 @@
+# plasck
+Plask app hackaton
